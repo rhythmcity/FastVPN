@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BADC81351CB3C50B00B49452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81341CB3C50B00B49452 /* main.m */; };
+		BADC81381CB3C50B00B49452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81371CB3C50B00B49452 /* AppDelegate.m */; };
+		BADC813B1CB3C50B00B49452 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC813A1CB3C50B00B49452 /* ViewController.m */; };
+		BADC813E1CB3C50B00B49452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADC813C1CB3C50B00B49452 /* Main.storyboard */; };
+		BADC81401CB3C50B00B49452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADC813F1CB3C50B00B49452 /* Assets.xcassets */; };
+		BADC81431CB3C50B00B49452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADC81411CB3C50B00B49452 /* LaunchScreen.storyboard */; };
+		BADC814E1CB3C50B00B49452 /* FastVPNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC814D1CB3C50B00B49452 /* FastVPNTests.m */; };
+		BADC81591CB3C50B00B49452 /* FastVPNUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81581CB3C50B00B49452 /* FastVPNUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BADC814A1CB3C50B00B49452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BADC81281CB3C50B00B49452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADC812F1CB3C50B00B49452;
+			remoteInfo = FastVPN;
+		};
+		BADC81551CB3C50B00B49452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BADC81281CB3C50B00B49452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADC812F1CB3C50B00B49452;
+			remoteInfo = FastVPN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BADC81301CB3C50B00B49452 /* FastVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADC81341CB3C50B00B49452 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BADC81361CB3C50B00B49452 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BADC81371CB3C50B00B49452 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BADC81391CB3C50B00B49452 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BADC813A1CB3C50B00B49452 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BADC813D1CB3C50B00B49452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BADC813F1CB3C50B00B49452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BADC81421CB3C50B00B49452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BADC81441CB3C50B00B49452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADC81491CB3C50B00B49452 /* FastVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADC814D1CB3C50B00B49452 /* FastVPNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastVPNTests.m; sourceTree = "<group>"; };
+		BADC814F1CB3C50B00B49452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADC81541CB3C50B00B49452 /* FastVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADC81581CB3C50B00B49452 /* FastVPNUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastVPNUITests.m; sourceTree = "<group>"; };
+		BADC815A1CB3C50B00B49452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BADC812D1CB3C50B00B49452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADC81461CB3C50B00B49452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADC81511CB3C50B00B49452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BADC81271CB3C50B00B49452 = {
+			isa = PBXGroup;
+			children = (
+				BADC81321CB3C50B00B49452 /* FastVPN */,
+				BADC814C1CB3C50B00B49452 /* FastVPNTests */,
+				BADC81571CB3C50B00B49452 /* FastVPNUITests */,
+				BADC81311CB3C50B00B49452 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BADC81311CB3C50B00B49452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BADC81301CB3C50B00B49452 /* FastVPN.app */,
+				BADC81491CB3C50B00B49452 /* FastVPNTests.xctest */,
+				BADC81541CB3C50B00B49452 /* FastVPNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BADC81321CB3C50B00B49452 /* FastVPN */ = {
+			isa = PBXGroup;
+			children = (
+				BADC81361CB3C50B00B49452 /* AppDelegate.h */,
+				BADC81371CB3C50B00B49452 /* AppDelegate.m */,
+				BADC81391CB3C50B00B49452 /* ViewController.h */,
+				BADC813A1CB3C50B00B49452 /* ViewController.m */,
+				BADC813C1CB3C50B00B49452 /* Main.storyboard */,
+				BADC813F1CB3C50B00B49452 /* Assets.xcassets */,
+				BADC81411CB3C50B00B49452 /* LaunchScreen.storyboard */,
+				BADC81441CB3C50B00B49452 /* Info.plist */,
+				BADC81331CB3C50B00B49452 /* Supporting Files */,
+			);
+			path = FastVPN;
+			sourceTree = "<group>";
+		};
+		BADC81331CB3C50B00B49452 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BADC81341CB3C50B00B49452 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BADC814C1CB3C50B00B49452 /* FastVPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				BADC814D1CB3C50B00B49452 /* FastVPNTests.m */,
+				BADC814F1CB3C50B00B49452 /* Info.plist */,
+			);
+			path = FastVPNTests;
+			sourceTree = "<group>";
+		};
+		BADC81571CB3C50B00B49452 /* FastVPNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BADC81581CB3C50B00B49452 /* FastVPNUITests.m */,
+				BADC815A1CB3C50B00B49452 /* Info.plist */,
+			);
+			path = FastVPNUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BADC812F1CB3C50B00B49452 /* FastVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADC815D1CB3C50B00B49452 /* Build configuration list for PBXNativeTarget "FastVPN" */;
+			buildPhases = (
+				BADC812C1CB3C50B00B49452 /* Sources */,
+				BADC812D1CB3C50B00B49452 /* Frameworks */,
+				BADC812E1CB3C50B00B49452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastVPN;
+			productName = FastVPN;
+			productReference = BADC81301CB3C50B00B49452 /* FastVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BADC81481CB3C50B00B49452 /* FastVPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADC81601CB3C50B00B49452 /* Build configuration list for PBXNativeTarget "FastVPNTests" */;
+			buildPhases = (
+				BADC81451CB3C50B00B49452 /* Sources */,
+				BADC81461CB3C50B00B49452 /* Frameworks */,
+				BADC81471CB3C50B00B49452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BADC814B1CB3C50B00B49452 /* PBXTargetDependency */,
+			);
+			name = FastVPNTests;
+			productName = FastVPNTests;
+			productReference = BADC81491CB3C50B00B49452 /* FastVPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BADC81531CB3C50B00B49452 /* FastVPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADC81631CB3C50B00B49452 /* Build configuration list for PBXNativeTarget "FastVPNUITests" */;
+			buildPhases = (
+				BADC81501CB3C50B00B49452 /* Sources */,
+				BADC81511CB3C50B00B49452 /* Frameworks */,
+				BADC81521CB3C50B00B49452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BADC81561CB3C50B00B49452 /* PBXTargetDependency */,
+			);
+			name = FastVPNUITests;
+			productName = FastVPNUITests;
+			productReference = BADC81541CB3C50B00B49452 /* FastVPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BADC81281CB3C50B00B49452 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "李言";
+				TargetAttributes = {
+					BADC812F1CB3C50B00B49452 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U4BHWUFC96;
+					};
+					BADC81481CB3C50B00B49452 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U4BHWUFC96;
+						TestTargetID = BADC812F1CB3C50B00B49452;
+					};
+					BADC81531CB3C50B00B49452 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U4BHWUFC96;
+						TestTargetID = BADC812F1CB3C50B00B49452;
+					};
+				};
+			};
+			buildConfigurationList = BADC812B1CB3C50B00B49452 /* Build configuration list for PBXProject "FastVPN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BADC81271CB3C50B00B49452;
+			productRefGroup = BADC81311CB3C50B00B49452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BADC812F1CB3C50B00B49452 /* FastVPN */,
+				BADC81481CB3C50B00B49452 /* FastVPNTests */,
+				BADC81531CB3C50B00B49452 /* FastVPNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BADC812E1CB3C50B00B49452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADC81431CB3C50B00B49452 /* LaunchScreen.storyboard in Resources */,
+				BADC81401CB3C50B00B49452 /* Assets.xcassets in Resources */,
+				BADC813E1CB3C50B00B49452 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADC81471CB3C50B00B49452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADC81521CB3C50B00B49452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BADC812C1CB3C50B00B49452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADC813B1CB3C50B00B49452 /* ViewController.m in Sources */,
+				BADC81381CB3C50B00B49452 /* AppDelegate.m in Sources */,
+				BADC81351CB3C50B00B49452 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADC81451CB3C50B00B49452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADC814E1CB3C50B00B49452 /* FastVPNTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADC81501CB3C50B00B49452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADC81591CB3C50B00B49452 /* FastVPNUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BADC814B1CB3C50B00B49452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADC812F1CB3C50B00B49452 /* FastVPN */;
+			targetProxy = BADC814A1CB3C50B00B49452 /* PBXContainerItemProxy */;
+		};
+		BADC81561CB3C50B00B49452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADC812F1CB3C50B00B49452 /* FastVPN */;
+			targetProxy = BADC81551CB3C50B00B49452 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BADC813C1CB3C50B00B49452 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BADC813D1CB3C50B00B49452 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BADC81411CB3C50B00B49452 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BADC81421CB3C50B00B49452 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BADC815B1CB3C50B00B49452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BADC815C1CB3C50B00B49452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BADC815E1CB3C50B00B49452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FastVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.FastVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BADC815F1CB3C50B00B49452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FastVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.FastVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BADC81611CB3C50B00B49452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.FastVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastVPN.app/FastVPN";
+			};
+			name = Debug;
+		};
+		BADC81621CB3C50B00B49452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.FastVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastVPN.app/FastVPN";
+			};
+			name = Release;
+		};
+		BADC81641CB3C50B00B49452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastVPNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.FastVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastVPN;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BADC81651CB3C50B00B49452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastVPNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.FastVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastVPN;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BADC812B1CB3C50B00B49452 /* Build configuration list for PBXProject "FastVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADC815B1CB3C50B00B49452 /* Debug */,
+				BADC815C1CB3C50B00B49452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BADC815D1CB3C50B00B49452 /* Build configuration list for PBXNativeTarget "FastVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADC815E1CB3C50B00B49452 /* Debug */,
+				BADC815F1CB3C50B00B49452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BADC81601CB3C50B00B49452 /* Build configuration list for PBXNativeTarget "FastVPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADC81611CB3C50B00B49452 /* Debug */,
+				BADC81621CB3C50B00B49452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BADC81631CB3C50B00B49452 /* Build configuration list for PBXNativeTarget "FastVPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADC81641CB3C50B00B49452 /* Debug */,
+				BADC81651CB3C50B00B49452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BADC81281CB3C50B00B49452 /* Project object */;
+}
