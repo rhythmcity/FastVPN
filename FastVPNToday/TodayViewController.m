@@ -8,9 +8,13 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "VPNTableViewCell.h"
 #import "Masonry.h"
-@interface TodayViewController () <NCWidgetProviding>
 
+static NSString * const VPNTABLEVIEWCELLINDENTITY = @"vpntableviewcellindentity";
+
+@interface TodayViewController () <NCWidgetProviding,UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong)UITableView *vpnTableView;
 @end
 
 @implementation TodayViewController
@@ -20,36 +24,49 @@
     // Do any additional setup after loading the view from its nib.
 
     self.view.translatesAutoresizingMaskIntoConstraints = NO;
-    UIView *backView = [[UIView alloc] init];
-    backView.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:backView];
-    
-    [backView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.top.trailing.bottom.equalTo(self.view);
-        make.height.equalTo(@1000);
+    [self.view addSubview:self.vpnTableView];
+    [self.vpnTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
     }];
     
-    UISwitch *switchView = [[UISwitch alloc] init];
     
-    [backView addSubview:switchView];
-    
-    [switchView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(backView).offset(10);
-        make.leading.equalTo(backView).offset(10);
-    }];
-    
-
-
-    
-    
-    
-//    [si mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.equalTo(self.view).offset(20);
-//        make.top.equalTo(self.view).offset(10);
-//        make.bottom.equalTo(self.view).offset(-10);
-//    }];
-//    
 }
+
+- (UITableView *)vpnTableView {
+
+    if (!_vpnTableView) {
+        _vpnTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _vpnTableView.delegate = self;
+        _vpnTableView.dataSource = self;
+        [_vpnTableView registerClass:[VPNTableViewCell class] forCellReuseIdentifier:VPNTABLEVIEWCELLINDENTITY];
+        _vpnTableView.separatorColor = [UIColor yellowColor];
+        _vpnTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+       
+    }
+    return _vpnTableView;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return 60;
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 10;
+
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    VPNTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VPNTABLEVIEWCELLINDENTITY];
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

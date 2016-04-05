@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BABF80931CB3F28000A15E84 /* VPNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BABF80921CB3F28000A15E84 /* VPNTableViewCell.m */; };
+		BABF80961CB3F6B200A15E84 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BABF80951CB3F6B200A15E84 /* LoadingView.m */; };
 		BADC81351CB3C50B00B49452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81341CB3C50B00B49452 /* main.m */; };
 		BADC81381CB3C50B00B49452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81371CB3C50B00B49452 /* AppDelegate.m */; };
 		BADC813B1CB3C50B00B49452 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC813A1CB3C50B00B49452 /* ViewController.m */; };
@@ -78,6 +80,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA1E87291CB3EFDB00B1DF1D /* FastVPNToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FastVPNToday.entitlements; sourceTree = "<group>"; };
+		BA1E872A1CB3F05300B1DF1D /* FastVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FastVPN.entitlements; sourceTree = "<group>"; };
+		BABF80911CB3F28000A15E84 /* VPNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNTableViewCell.h; sourceTree = "<group>"; };
+		BABF80921CB3F28000A15E84 /* VPNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNTableViewCell.m; sourceTree = "<group>"; };
+		BABF80941CB3F6B200A15E84 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		BABF80951CB3F6B200A15E84 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		BADC81301CB3C50B00B49452 /* FastVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADC81341CB3C50B00B49452 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BADC81361CB3C50B00B49452 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +193,7 @@
 		BADC81321CB3C50B00B49452 /* FastVPN */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E872A1CB3F05300B1DF1D /* FastVPN.entitlements */,
 				BADC81361CB3C50B00B49452 /* AppDelegate.h */,
 				BADC81371CB3C50B00B49452 /* AppDelegate.m */,
 				BADC81391CB3C50B00B49452 /* ViewController.h */,
@@ -235,8 +244,13 @@
 		BADC816E1CB3C60C00B49452 /* FastVPNToday */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E87291CB3EFDB00B1DF1D /* FastVPNToday.entitlements */,
 				BADC816F1CB3C60C00B49452 /* TodayViewController.h */,
 				BADC81701CB3C60C00B49452 /* TodayViewController.m */,
+				BABF80911CB3F28000A15E84 /* VPNTableViewCell.h */,
+				BABF80921CB3F28000A15E84 /* VPNTableViewCell.m */,
+				BABF80941CB3F6B200A15E84 /* LoadingView.h */,
+				BABF80951CB3F6B200A15E84 /* LoadingView.m */,
 				BADC81721CB3C60C00B49452 /* MainInterface.storyboard */,
 				BADC81751CB3C60C00B49452 /* Info.plist */,
 			);
@@ -360,6 +374,11 @@
 					BADC812F1CB3C50B00B49452 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = U4BHWUFC96;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BADC81481CB3C50B00B49452 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -374,6 +393,11 @@
 					BADC81691CB3C60C00B49452 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = U4BHWUFC96;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -474,7 +498,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADC81981CB3D3A200B49452 /* MASCompositeConstraint.m in Sources */,
+				BABF80961CB3F6B200A15E84 /* LoadingView.m in Sources */,
 				BADC819C1CB3D3A200B49452 /* MASConstraintMaker.m in Sources */,
+				BABF80931CB3F28000A15E84 /* VPNTableViewCell.m in Sources */,
 				BADC81A61CB3D3A200B49452 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				BADC819E1CB3D3A200B49452 /* MASLayoutConstraint.m in Sources */,
 				BADC81711CB3C60C00B49452 /* TodayViewController.m in Sources */,
@@ -620,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FastVPN/FastVPN.entitlements;
 				INFOPLIST_FILE = FastVPN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -632,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FastVPN/FastVPN.entitlements;
 				INFOPLIST_FILE = FastVPN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -691,6 +719,7 @@
 		BADC817A1CB3C60C00B49452 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FastVPNToday/FastVPNToday.entitlements;
 				INFOPLIST_FILE = FastVPNToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -703,6 +732,7 @@
 		BADC817B1CB3C60C00B49452 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FastVPNToday/FastVPNToday.entitlements;
 				INFOPLIST_FILE = FastVPNToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
