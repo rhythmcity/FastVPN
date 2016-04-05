@@ -8,7 +8,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
-
+#import "Masonry.h"
 @interface TodayViewController () <NCWidgetProviding>
 
 @end
@@ -18,9 +18,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [UIColor redColor];
+
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    UIView *backView = [[UIView alloc] init];
+    backView.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:backView];
+    
+    [backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.top.trailing.bottom.equalTo(self.view);
+        make.height.equalTo(@1000);
+    }];
+    
+    UISwitch *switchView = [[UISwitch alloc] init];
+    
+    [backView addSubview:switchView];
+    
+    [switchView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(backView).offset(10);
+        make.leading.equalTo(backView).offset(10);
+    }];
+    
+
+
     
     
+    
+//    [si mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.view).offset(20);
+//        make.top.equalTo(self.view).offset(10);
+//        make.bottom.equalTo(self.view).offset(-10);
+//    }];
+//    
 }
 
 - (void)didReceiveMemoryWarning {
