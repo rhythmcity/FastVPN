@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "VPNEntity.h"
 @interface VPNTableViewCell : UITableViewCell
+
+@property (nonatomic, strong)VPNEntity *entity;
 
 @end

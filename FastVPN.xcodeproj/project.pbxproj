@@ -39,6 +39,7 @@
 		BADC81A61CB3D3A200B49452 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81931CB3D3A200B49452 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		BADC81A71CB3D3A200B49452 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81951CB3D3A200B49452 /* View+MASAdditions.m */; };
 		BADC81A81CB3D3A200B49452 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81951CB3D3A200B49452 /* View+MASAdditions.m */; };
+		BADC81AB1CB4E49C00B49452 /* VPNEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC81AA1CB4E49C00B49452 /* VPNEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		BADC81941CB3D3A200B49452 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		BADC81951CB3D3A200B49452 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		BADC81961CB3D3A200B49452 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		BADC81A91CB4E49C00B49452 /* VPNEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNEntity.h; sourceTree = "<group>"; };
+		BADC81AA1CB4E49C00B49452 /* VPNEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +254,8 @@
 				BABF80921CB3F28000A15E84 /* VPNTableViewCell.m */,
 				BABF80941CB3F6B200A15E84 /* LoadingView.h */,
 				BABF80951CB3F6B200A15E84 /* LoadingView.m */,
+				BADC81A91CB4E49C00B49452 /* VPNEntity.h */,
+				BADC81AA1CB4E49C00B49452 /* VPNEntity.m */,
 				BADC81721CB3C60C00B49452 /* MainInterface.storyboard */,
 				BADC81751CB3C60C00B49452 /* Info.plist */,
 			);
@@ -497,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADC81AB1CB4E49C00B49452 /* VPNEntity.m in Sources */,
 				BADC81981CB3D3A200B49452 /* MASCompositeConstraint.m in Sources */,
 				BABF80961CB3F6B200A15E84 /* LoadingView.m in Sources */,
 				BADC819C1CB3D3A200B49452 /* MASConstraintMaker.m in Sources */,

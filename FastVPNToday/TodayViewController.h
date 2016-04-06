@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+extern NSString * const ShareGroupID;
 @interface TodayViewController : UIViewController
 
 @end

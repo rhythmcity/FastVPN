@@ -9,12 +9,20 @@
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
 #import "VPNTableViewCell.h"
+#import "VPNEntity.h"
 #import "Masonry.h"
 
 static NSString * const VPNTABLEVIEWCELLINDENTITY = @"vpntableviewcellindentity";
 
+NSString *const ShareGroupID    = @"group.com.liyan.FastVPN";
+NSString *const shareEntitys    = @"shareEntitys";
+NSString *const userName        = @"userName";
+NSString *const passWord        = @"passWord";
+NSString *const ipServer        = @"ipServer";
+NSString *const des             = @"des";
 @interface TodayViewController () <NCWidgetProviding,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *vpnTableView;
+@property (nonatomic,strong)NSMutableArray *entityArray;
 @end
 
 @implementation TodayViewController
@@ -29,7 +37,31 @@ static NSString * const VPNTABLEVIEWCELLINDENTITY = @"vpntableviewcellindentity"
         make.edges.equalTo(self.view);
     }];
     
+    NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:ShareGroupID];
     
+    
+    NSArray *share =  [shared objectForKey:shareEntitys];
+    
+    for (NSDictionary *dic in share) {
+        VPNEntity *entity = [[VPNEntity alloc] init];
+        entity.userName = [dic objectForKey:userName];
+        entity.passWord = [dic objectForKey:passWord];
+        entity.ipServer = [dic objectForKey:ipServer];
+        entity.des      = [dic objectForKey:des];
+        [self.entityArray addObject:entity];
+    }
+    
+}
+
+- (NSMutableArray *)entityArray {
+    if (!_entityArray) {
+        
+        _entityArray = [NSMutableArray array];
+        
+    }
+    
+    return _entityArray;
+
 }
 
 - (UITableView *)vpnTableView {
@@ -55,15 +87,14 @@ static NSString * const VPNTABLEVIEWCELLINDENTITY = @"vpntableviewcellindentity"
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
+    return self.entityArray.count;
 
 }
-
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     VPNTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:VPNTABLEVIEWCELLINDENTITY];
+    cell.entity = self.entityArray[indexPath.row];
     return cell;
 }
 
